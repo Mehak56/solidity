@@ -1,0 +1,30 @@
+Task no 1
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.15;
+
+contract HelloWorld {
+
+    string mysen  = 'Hello World';
+
+    function getsen() public view returns (string memory) 
+    {
+        return mysen;
+    }
+}
+
+Task no 2
+
+contract Variables {
+
+    uint public fstnum = 10;
+
+    function getfstResult() public view returns(uint){
+     
+       return fstnum; 
+    }
+    function Localvar() pure public returns(uint){
+        uint secnum=20;
+        return secnum;
+    }
+}
