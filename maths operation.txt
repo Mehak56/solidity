@@ -1,0 +1,54 @@
+
+	Task no 1
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.15;
+
+contract FuncArg
+ {
+    uint256 num;
+
+    function set(uint256 _num) public 
+    {
+        num = _num;
+    }
+    function get() public view returns (uint256) 
+    {
+        return num;
+    }
+}
+	Task no2
+contract operation {
+    
+    function evaluate(int256 a, int256 b) public pure returns (int256) {
+        int256 sum = (a + b);
+        int256 diff = (a - b);
+        int256 result = sum - diff;
+        return result;
+    }
+}
+	Task no 3
+contract operation {
+    
+     function find(int256 a) public pure returns (int256) 
+     {
+        require(a > 0, "a  not be negative");
+        int256 rem = a % 3;
+        return rem;
+    }
+
+}
+	Task no 4
+contract operation {
+    
+     function average
+     (
+        int256 a,
+        int256 b,
+        int256 c
+    ) 
+    public pure returns (int256) {
+        require(a > 0 && b > 0 && c > 0, "num not be neg");
+        return (a + b + c) / 3;
+    }
+}
+
