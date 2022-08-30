@@ -17,21 +17,22 @@ contract operation {
 }
 
 	Task no 2
-contract operation{
-function palindrome(uint256 num) public pure returns (uint256) {
-        uint256 reversed = 0;
-        uint256 remainder;
-        uint256 original = num;
+contract operation {
+    
+        function palindrome(uint256 num) public pure returns (uint256) {
+        uint256 revers = 0;
+        uint256 remain;
+        uint256 orig = num;
 
         while (num != 0) {
-            remainder = num % 10;
-            reversed = reversed * 10 + remainder;
+            remain = num % 10;
+            revers = revers * 10 + remain;
             num /= 10;
         }
-        if (original == reversed) {
-            return 1; //palindrome
+        if (orig == revers) {
+            return 1; 
         } else {
-            return 0; //not palindrome
+            return 0; 
         }
     }
 }
