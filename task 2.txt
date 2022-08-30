@@ -1,0 +1,39 @@
+
+	Task no 1
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.15;
+
+contract operation {
+    
+        function power(uint256 base, uint256 exponent)
+        public pure 
+        returns (uint256)
+    {
+        while (exponent != 0) {
+            return (base**exponent);
+        }
+    }
+
+}
+
+	Task no 2
+contract operation {
+    
+        function palindrome(uint256 num) public pure returns (uint256) {
+        uint256 revers = 0;
+        uint256 remain;
+        uint256 orig = num;
+
+        while (num != 0) {
+            remain = num % 10;
+            revers = revers * 10 + remain;
+            num /= 10;
+        }
+        if (orig == revers) {
+            return 1; 
+        } else {
+            return 0; 
+        }
+    }
+}
+ 
